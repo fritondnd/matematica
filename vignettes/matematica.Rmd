@@ -1,0 +1,36 @@
+---
+title: "matematica"
+subtitle: "Soma de parcelas ou plot de coordenadas (x;y)"
+date: "`Sys.Date()`"
+author: "Autor: Nome Sobrenome"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{matematica}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+carregando a biblioteca
+
+```{r setup}
+library(matematica)
+```
+
+para somar duas parcelas x e y
+
+```{r}
+soma(3, 4)
+```
+
+para plotar o ponto (x;y) no plano cartesiano
+
+```{r}
+cartesiano(2, 3)
+```
